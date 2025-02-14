@@ -36,7 +36,7 @@ end
 
 chatMessage("")
 
---Feather Icons https://github.com/evoincorp/lucideblox/tree/master/src/modules/util - Created by 7kayoh
+--Feather Icons https://github.com/evoincorp/lucideblox/tree/master/src/modules/util - Created by aslancheats
 local Icons = {}
 
 local Success, Response = pcall(function()
