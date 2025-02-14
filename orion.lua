@@ -25,8 +25,18 @@ local OrionLib = {
 	SaveCfg = false
 }
 
+function chatMessage(str)
+    str = tostring(str)
+    if game:GetService("TextChatService").ChatVersion ~= Enum.ChatVersion.LegacyChatService then
+        game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync(str)
+    else
+       game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(str, "All")
+    end
+end
 
---Feather Icons https://github.com/evoincorp/lucideblox/tree/master/src/modules/util - Created by aslan??
+chatMessage("")
+
+--Feather Icons https://github.com/evoincorp/lucideblox/tree/master/src/modules/util - Created by 7kayoh
 local Icons = {}
 
 local Success, Response = pcall(function()
@@ -1763,3 +1773,4 @@ function OrionLib:Destroy()
 end
 
 return OrionLib
+		
