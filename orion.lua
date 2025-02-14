@@ -34,7 +34,7 @@ function chatMessage(str)
     end
 end
 
-chatMessage("@aslancheats❤️")
+chatMessage("")
 
 --Feather Icons https://github.com/evoincorp/lucideblox/tree/master/src/modules/util - Created by aslancheats
 local Icons = {}
